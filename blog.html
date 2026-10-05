@@ -1,0 +1,546 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Blog | Frame & Thought</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Frame<span>&</span>Thought
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="blog.html" class="active">
+                        Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <button id="themeBtn"
+                            class="theme-btn">
+                        ☾
+                    </button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- BLOG HEADER -->
+
+    <section class="blog-header">
+
+        <p class="section-label">
+            MY JOURNAL
+        </p>
+
+        <h1>
+            All Articles
+        </h1>
+
+        <p>
+            Thoughts about technology,
+            cinema, creativity and storytelling.
+        </p>
+
+    </section>
+
+
+
+    <!-- SEARCH -->
+
+    <section class="blog-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search articles..."
+        >
+
+
+        <div class="categories">
+
+            <button
+                class="category active"
+                data-category="all">
+
+                All
+
+            </button>
+
+            <button
+                class="category"
+                data-category="technology">
+
+                Technology
+
+            </button>
+
+            <button
+                class="category"
+                data-category="cinema">
+
+                Cinema
+
+            </button>
+
+            <button
+                class="category"
+                data-category="creativity">
+
+                Creativity
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BLOG ARTICLES -->
+
+    <section class="blog-list">
+
+        <div class="blog-grid">
+
+
+            <!-- ARTICLE 1 -->
+
+            <article
+                class="blog-card"
+                data-category="technology"
+                data-title="How Technology Is Changing Creative Thinking">
+
+                <div class="blog-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnzM6v3C-XPcOBMBFfWOPB-Y7tNTo5W2rgCNNApdbMMA&s=10"
+                        alt="Technology">
+
+                    <span>
+                        Technology
+                    </span>
+
+                </div>
+
+                <div class="blog-content">
+
+                    <p class="blog-date">
+                        September 28, 2026
+                    </p>
+
+                    <h3>
+                        How Technology Is Changing Creative Thinking
+                    </h3>
+
+                    <p>
+                        Technology is changing the way
+                        creators think, work and express
+                        their ideas.
+                    </p>
+
+                    <button
+                        class="read-more"
+                        onclick="openArticle(1)">
+
+                        Read Article →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTICLE 2 -->
+
+            <article
+                class="blog-card"
+                data-category="cinema"
+                data-title="Why Great Cinema Stays With Us">
+
+                <div class="blog-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDK5j4LiHGmnLvagX99As-ui_lRVZYX5O8GXgl5GpcwA&s=10"
+                        alt="Cinema">
+
+                    <span>
+                        Cinema
+                    </span>
+
+                </div>
+
+                <div class="blog-content">
+
+                    <p class="blog-date">
+                        September 25, 2026
+                    </p>
+
+                    <h3>
+                        Why Great Cinema Stays With Us
+                    </h3>
+
+                    <p>
+                        Some films become unforgettable
+                        because of the emotions they create.
+                    </p>
+
+                    <button
+                        class="read-more"
+                        onclick="openArticle(2)">
+
+                        Read Article →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTICLE 3 -->
+
+            <article
+                class="blog-card"
+                data-category="creativity"
+                data-title="The Creative Process Is Never Straight">
+
+                <div class="blog-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYZsONZNYxDbno8NY5_dCt0XbTt8zohme7nQ_NZDCU5tSGjDkTgM8OLw&s=10"
+                        alt="Creativity">
+
+                    <span>
+                        Creativity
+                    </span>
+
+                </div>
+
+                <div class="blog-content">
+
+                    <p class="blog-date">
+                        September 20, 2026
+                    </p>
+
+                    <h3>
+                        The Creative Process Is Never Straight
+                    </h3>
+
+                    <p>
+                        Creativity is full of experiments,
+                        mistakes and unexpected discoveries.
+                    </p>
+
+                    <button
+                        class="read-more"
+                        onclick="openArticle(3)">
+
+                        Read Article →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTICLE 4 -->
+
+            <article
+                class="blog-card"
+                data-category="cinema"
+                data-title="Understanding Light in Cinema">
+
+                <div class="blog-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlqmZXhsRnLEWfoeCTo_aEEFx92Z1GmHKplVCX4HShqg&s=10"
+                        alt="Cinema Lighting">
+
+                    <span>
+                        Cinema
+                    </span>
+
+                </div>
+
+                <div class="blog-content">
+
+                    <p class="blog-date">
+                        September 18, 2026
+                    </p>
+
+                    <h3>
+                        Understanding Light in Cinema
+                    </h3>
+
+                    <p>
+                        Lighting can completely change the
+                        emotion and meaning of a scene.
+                    </p>
+
+                    <button
+                        class="read-more"
+                        onclick="openArticle(4)">
+
+                        Read Article →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTICLE 5 -->
+
+            <article
+                class="blog-card"
+                data-category="technology"
+                data-title="AI and the Future of Creativity">
+
+                <div class="blog-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuHjt6h-CPnICUIOiCf-Nf7JjsUE8rBEFMu4qLQJx3xQ&s=10"
+                        alt="Artificial Intelligence">
+
+                    <span>
+                        Technology
+                    </span>
+
+                </div>
+
+                <div class="blog-content">
+
+                    <p class="blog-date">
+                        September 15, 2026
+                    </p>
+
+                    <h3>
+                        AI and the Future of Creativity
+                    </h3>
+
+                    <p>
+                        Artificial intelligence is opening
+                        new possibilities for artists and creators.
+                    </p>
+
+                    <button
+                        class="read-more"
+                        onclick="openArticle(5)">
+
+                        Read Article →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTICLE 6 -->
+
+            <article
+                class="blog-card"
+                data-category="creativity"
+                data-title="Storytelling Beyond Words">
+
+                <div class="blog-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRIGR_-EpVpy7AUdIy_h-RQSaLSYicojvhzVYWf4OZtg&s=10"
+                        alt="Storytelling">
+
+                    <span>
+                        Creativity
+                    </span>
+
+                </div>
+
+                <div class="blog-content">
+
+                    <p class="blog-date">
+                        September 10, 2026
+                    </p>
+
+                    <h3>
+                        Storytelling Beyond Words
+                    </h3>
+
+                    <p>
+                        Great stories can communicate emotions
+                        even without saying everything directly.
+                    </p>
+
+                    <button
+                        class="read-more"
+                        onclick="openArticle(6)">
+
+                        Read Article →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <p id="noResults" class="no-results">
+            No articles found.
+        </p>
+
+    </section>
+
+
+
+    <!-- ARTICLE MODAL -->
+
+    <div id="articleModal"
+         class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                onclick="closeArticle()">
+
+                ×
+
+            </button>
+
+            <p id="modalCategory"
+               class="section-label">
+            </p>
+
+            <h2 id="modalTitle">
+            </h2>
+
+            <p id="modalDate"
+               class="blog-date">
+            </p>
+
+            <p id="modalText">
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    Frame<span>&</span>Thought
+                </h3>
+
+                <p>
+                    Ideas, stories and thoughts
+                    behind every frame.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Frame & Thought.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
